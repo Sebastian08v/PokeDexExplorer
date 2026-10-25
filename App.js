@@ -1,11 +1,5 @@
-// App.js
-import { SafeAreaProvider } from 'react-native-safe-area-context';
-import PokemonListScreen from './src/screens/PokemonListScreen';
+import StackNavigator from './src/navigation/StackNavigator';
 
 export default function App() {
-  return (
-    <SafeAreaProvider>
-      <PokemonListScreen />
-    </SafeAreaProvider>
-  );
+  return <StackNavigator />;
 }
